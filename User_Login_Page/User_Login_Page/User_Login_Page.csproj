@@ -1,0 +1,161 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{809E666A-C707-4CBC-9EB3-0639F265CFA6}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <RootNamespace>User_Login_Page</RootNamespace>
+    <AssemblyName>User_Login_Page</AssemblyName>
+    <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+    <Deterministic>true</Deterministic>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup />
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Borrowed_Books.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Borrowed_Books.Designer.cs">
+      <DependentUpon>Borrowed_Books.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Dashboard.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Dashboard.Designer.cs">
+      <DependentUpon>Dashboard.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Login_Histo.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Login_Histo.Designer.cs">
+      <DependentUpon>Login_Histo.cs</DependentUpon>
+    </Compile>
+    <Compile Include="OverDueBooks.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="OverDueBooks.Designer.cs">
+      <DependentUpon>OverDueBooks.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Returned_Books.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Returned_Books.Designer.cs">
+      <DependentUpon>Returned_Books.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Uesr_login.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Uesr_login.Designer.cs">
+      <DependentUpon>Uesr_login.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="UserManagement.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UserManagement.Designer.cs">
+      <DependentUpon>UserManagement.cs</DependentUpon>
+    </Compile>
+    <EmbeddedResource Include="Borrowed_Books.resx">
+      <DependentUpon>Borrowed_Books.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Dashboard.resx">
+      <DependentUpon>Dashboard.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Login_Histo.resx">
+      <DependentUpon>Login_Histo.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="OverDueBooks.resx">
+      <DependentUpon>OverDueBooks.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Returned_Books.resx">
+      <DependentUpon>Returned_Books.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Uesr_login.resx">
+      <DependentUpon>Uesr_login.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <EmbeddedResource Include="UserManagement.resx">
+      <DependentUpon>UserManagement.cs</DependentUpon>
+    </EmbeddedResource>
+    <None Include="app.manifest" />
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\469397949_976321767871346_3615799244908960686_n.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\277781006_341081954728667_7022568594208681359_n.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\277781006_341081954728667_7022568594208681359_n-removebg-preview.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\277781006_341081954728667_7022568594208681359_n-removebg-preview1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\5bba1789cbd04e2e93d3cfbf2536e4fa.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\new-removebg-preview.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\476234498_602244352450119_4110456051283944235_n.jpg" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>
